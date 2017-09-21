@@ -58,10 +58,10 @@
 /dev/HPD                  0660   system     system
 
 # mfc
-/dev/video6               0660   mediacodec      mediadrm
-/dev/video7               0660   media      mediadrm
-/dev/video8               0660   media      mediadrm
-/dev/video9               0660   media      mediadrm
+/dev/video6               0660   mediacodec mediadrm
+/dev/video7               0660   mediacodec mediadrm
+/dev/video8               0660   mediacodec mediadrm
+/dev/video9               0660   mediacodec mediadrm
 
 # camera
 /dev/video101             0660   cameraserver      cameraserver
@@ -117,7 +117,7 @@
 
 # jpeg
 /dev/m2m1shot_jpeg	  0660   media      media
-/dev/video12              0660   media      media
+/dev/video12              0660   cameraserver      media
 
 # audio
 /dev/seiren               0660   system     audio
@@ -132,7 +132,7 @@
 # SIPC RIL
 /dev/umts_boot0           0660   radio      radio
 /dev/umts_ipc0            0660   radio      radio
-/dev/umts_ipc1            0660   radio      radio
+#/dev/umts_ipc1            0660   radio      radio
 /dev/umts_rfs0            0660   radio      radio
 
 # Modem Interface
@@ -156,6 +156,8 @@
 /sys/devices/system/cpu/cpu*	cpufreq/interactive/input_boost			0660	system	system
 /sys/devices/system/cpu/cpu*	cpufreq/interactive/boostpulse_duration		0660	system	system
 /sys/devices/system/cpu/cpu*	cpufreq/interactive/io_is_busy			0660	system	system
+/sys/devices/system/cpu/cpu*	cpufreq/interactive/param_index			0660	system	system
+/sys/devices/system/cpu/cpu*	cpufreq/interactive/mode				0660	system	system
 
 # Vision (VPU, SCORE)
 /dev/vertex0             0660   media      media

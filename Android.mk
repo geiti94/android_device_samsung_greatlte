@@ -1,4 +1,4 @@
-ifneq ($(filter dreamlte,$(TARGET_DEVICE)),)
+ifneq ($(filter greatlte,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
