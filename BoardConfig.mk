@@ -22,9 +22,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := exynos8895-greatlte_eur_open_defconfig
+TARGET_KERNEL_CONFIG := exynos8895-greatltetwrp_defconfig
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/samsung/universal8895_greatlte
+TARGET_KERNEL_SOURCE := kernel/samsung/IronKernel
 TARGET_USES_UNCOMPRESSED_KERNEL := true
 
 # Image
